@@ -1,5 +1,7 @@
 import xbmcaddon
 import xbmcgui
+import os
+
 
 addon 		= xbmcaddon.Addon()
 addonname 	= addon.getAddonInfo('name')
@@ -7,7 +9,7 @@ addonname 	= addon.getAddonInfo('name')
 class Remount(xbmc):
 	def lauch(self):
 		print "init launch"
-		xbmcgui.Dialog().ok("Works", "Ok clicked")
+		os.system("echo Hello world!")
 
 print "after Remount definition"
 remount = Remount()
