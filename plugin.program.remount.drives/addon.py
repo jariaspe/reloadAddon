@@ -1,25 +1,27 @@
 import xbmcaddon
 import xbmcgui
+import xbmc
 import os
 
 
 addon 		= xbmcaddon.Addon()
 addonname 	= addon.getAddonInfo('name')
 
-class Remount(xbmc):
+class Remount():
 	def lauch(self):
-		print "init launch"
+		xbmc.log("init launch")
 		os.system("echo Hello world!")
 
-print "after Remount definition"
+xbmc.log("after Remount definition")
 remount = Remount()
-print "after remount object instantation"
+xbmc.log("after remount object instantation")
 dialog = xbmcgui.Dialog()
-print "after dialog instantation"
+xbmc.log("after dialog instantation")
 
 if dialog.yesno("addonname", "Remount drives"):
-	print "if yesno clicked"
+	xbmc.log("if yesno clicked")
 	remount.lauch()
 
 del dialog
 del remount
+xbmc.log("end of file")
