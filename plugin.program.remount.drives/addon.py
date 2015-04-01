@@ -10,7 +10,7 @@ addonname 	= addon.getAddonInfo('name')
 class Remount():
 	def lauch(self):
 		xbmc.log("init launch")
-		os.system("echo Hello world!")
+		os.system("mount -o loop /dev/sda /media/DiscoRasp/")
 
 xbmc.log("after Remount definition")
 remount = Remount()
