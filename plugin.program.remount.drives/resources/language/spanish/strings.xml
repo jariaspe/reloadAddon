@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="32000">Recargar disco</string>
+    <string id="32001">¿Quieres recargar el disco?</string>
+    <string id="32002">Disco cargado</string>
+</strings>
